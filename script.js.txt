@@ -1,0 +1,10 @@
+function addOverlay() {
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+    document.body.appendChild(overlay);
+
+    // Remove the overlay after a certain duration (e.g., 2 seconds)
+    setTimeout(() => {
+        overlay.remove();
+    }, 2000);
+}
